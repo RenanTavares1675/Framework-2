@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+
+<head>
+    <title> Bazaar - Edição de  {{titulo}}</title>
+</head>
+
+<body>
+    <h4>Edição de {{titulo}}</h4>
+    <form action="/categoria/editar/{{ categoria.id }}" method="post">
+        <label for="nome"> Categoria </label>
+        <input type="text" id="nome" name="nome" value="{{categoria.nome}}">
+
+        <p><input type="submit" value="Alterar"></p>
+    </form>
+    <a href={{url_for("categoria")}}>Cancelar</a>
+
+    
+</body>
+
+</html>
